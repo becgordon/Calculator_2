@@ -8,6 +8,7 @@ while True:
     equation = input("Equation? ")
     tokens = equation.split(" ")
     operand = tokens[0]
+    result = ""
 
     if "q" in tokens:
         print("Bye!")
@@ -18,7 +19,7 @@ while True:
     if len(tokens) > 2:
         num2 = tokens[2]
 
-    elif operand == "+":
+    if operand == "+":
         result = add(float(num1),float(num2))
     
     elif operand == "-":
